@@ -110,9 +110,15 @@ section#player table td img {
 .form-group {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 1rem;
 }
 
 #config-btn {
     width: 100%;
+    background-color: #ccc;
+}
+
+.form-group input {
+    background-color: #ccc;
+    border: none;
 }
