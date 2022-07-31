@@ -52,14 +52,5 @@
                 </table>
             </div>
         </section>
-
-        <% playlist.forEach((music) => { %>
-        <section>
-            <h2><%= music.name %></h2>
-            <p><%= music.author %></p>
-            <img src="<%= music.linkImage%>" alt="Music image" />
-            <audio controls src="<%= music.linkMusic%>"></audio>
-        </section>
-        <% }) %>
     </body>
 </html>

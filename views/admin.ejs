@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Music Player</title>
-</head>
-<body>
-    <h1>Upload new music</h1>
-
-    <form action="/create" method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
-
-        <label for="author">Author:</label>
-        <input type="text" name="author" id="author">
-
-        <label for="linkImage">Image link:</label>
-        <input type="text" name="linkImage" id="linkImage">
-
-        <label for="linkMusic">Music link:</label>
-        <input type="text" name="linkMusic" id="linkMusic">
-
-        <button type="submit">Upload</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Music Player</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/"><img src="/img/logoblue.png" alt="Logo" /></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+            <section id="config-title">
+                <h1>Upload new music</h1>
+            </section>
+            <section id="config-container">
+                <form id="config-form" action="/create" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author:</label>
+                        <input type="text" name="author" id="author" />
+                    </div>
+                    <div class="form-group">
+                        <label for="linkImage">Image link:</label>
+                        <input type="text" name="linkImage" id="linkImage" />
+                    </div>
+                    <div class="form-group">
+                        <label for="linkMusic">Music link:</label>
+                        <input type="text" name="linkMusic" id="linkMusic" />
+                    </div>
+                    <div class="form-group">
+                        <button id="config-btn" type="submit">Upload</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
 </html>
